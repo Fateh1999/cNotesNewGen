@@ -8,91 +8,103 @@
 </head>
 <body>
     <header>
-        <h1>C Language Learning Platform</h1>
+        <h1>C Language Learning Platform # NewGen Academy</h1>
         <p>Learn C programming with interactive lessons and practice</p>
     </header>
 
     <div class="container">
         <nav class="sidebar">
             <h2>Topics</h2>
-            <ul id="topic-list">
-                <li><a href="#" data-topic="introduction" class="active">C Introduction</a></li>
-                <li><a href="#" data-topic="output">Output (printf)</a></li>
-                <li><a href="#" data-topic="comments">Comments</a></li>
-                <li><a href="#" data-topic="variables">Variables</a></li>
-                <li><a href="#" data-topic="data-types">Data Types</a></li>
-                <li><a href="#" data-topic="operators">Operators</a></li>
-                <li><a href="#" data-topic="if-else">If-Else</a></li>
-                <li><a href="#" data-topic="switch">Switch</a></li>
-                <li><a href="#" data-topic="while">While Loop</a></li>
-                <li><a href="#" data-topic="for">For Loop</a></li>
-                <li><a href="#" data-topic="break-continue">Break & Continue</a></li>
-                <li><a href="#" data-topic="arrays">Arrays</a></li>
-                <li><a href="#" data-topic="strings">Strings</a></li>
-                <li><a href="#" data-topic="address">Address (&)</a></li>
-                <li><a href="#" data-topic="pointers">Pointers</a></li>
-                <li><a href="#" data-topic="functions">Functions</a></li>
-                <li><a href="#" data-topic="parameters">Function Parameters</a></li>
-                <li><a href="#" data-topic="scope">Scope</a></li>
-                <li><a href="#" data-topic="declaration">Declaration</a></li>
-                <li><a href="#" data-topic="recursion">Recursion</a></li>
-                <li><a href="#" data-topic="structures">Structures</a></li>
-                <li><a href="#" data-topic="union">Union</a></li>
-                <li><a href="#" data-topic="bitwise">Bitwise Operators</a></li>
-            </ul>
+            <div class="sidebar-scrollable">
+                <ul id="topic-list">
+                    <li><a href="#" data-topic="introduction" class="active">C Introduction</a></li>
+                    <li><a href="#" data-topic="output">Output (printf)</a></li>
+                    <li><a href="#" data-topic="comments">Comments</a></li>
+                    <li><a href="#" data-topic="variables">Variables</a></li>
+                    <li><a href="#" data-topic="data-types">Data Types</a></li>
+                    <li><a href="#" data-topic="operators">Operators</a></li>
+                    <li><a href="#" data-topic="if-else">If-Else</a></li>
+                    <li><a href="#" data-topic="switch">Switch</a></li>
+                    <li><a href="#" data-topic="while">While Loop</a></li>
+                    <li><a href="#" data-topic="for">For Loop</a></li>
+                    <li><a href="#" data-topic="break-continue">Break & Continue</a></li>
+                    <li><a href="#" data-topic="arrays">Arrays</a></li>
+                    <li><a href="#" data-topic="strings">Strings</a></li>
+                    <li><a href="#" data-topic="address">Address (&)</a></li>
+                    <li><a href="#" data-topic="pointers">Pointers</a></li>
+                    <li><a href="#" data-topic="functions">Functions</a></li>
+                    <li><a href="#" data-topic="parameters">Function Parameters</a></li>
+                    <li><a href="#" data-topic="scope">Scope</a></li>
+                    <li><a href="#" data-topic="declaration">Declaration</a></li>
+                    <li><a href="#" data-topic="recursion">Recursion</a></li>
+                    <li><a href="#" data-topic="structures">Structures</a></li>
+                    <li><a href="#" data-topic="union">Union</a></li>
+                    <li><a href="#" data-topic="bitwise">Bitwise Operators</a></li>
+                </ul>
+            </div>
         </nav>
 
         <main class="content">
-            <div id="topic-content">
-                <h2 id="topic-title">Introduction to C</h2>
-                <div id="topic-explanation">
-                    <p>Welcome to the C programming language! C is a powerful, general-purpose programming language that has influenced many other languages.</p>
-                    <h3>What is C?</h3>
-                    <p>C was created by Dennis Ritchie at Bell Labs in 1972. It's known for its efficiency and control over system resources.</p>
-                    <h3>Why Learn C?</h3>
-                    <ul>
-                        <li>Foundation for many modern languages</li>
-                        <li>Direct hardware manipulation</li>
-                        <li>High performance</li>
-                        <li>Portable across platforms</li>
-                    </ul>
-                    <h3>Your First C Program</h3>
-                    <pre><code>#include <stdio.h>
+            <div class="content-scrollable">
+                <div id="topic-content">
+                    <h2 id="topic-title">Introduction to C</h2>
+                    <div id="topic-explanation">
+                        <p>Welcome to the C programming language! C is a powerful, general-purpose programming language that has influenced many other languages.</p>
+                        <h3>What is C?</h3>
+                        <p>C was created by Dennis Ritchie at Bell Labs in 1972. It's known for its efficiency and control over system resources.</p>
+                        <h3>Why Learn C?</h3>
+                        <ul>
+                            <li>Foundation for many modern languages</li>
+                            <li>Direct hardware manipulation</li>
+                            <li>High performance</li>
+                            <li>Portable across platforms</li>
+                        </ul>
+                        <h3>Your First C Program</h3>
+                        <pre><code>#include <stdio.h>
 
 int main() {
     printf("Hello, World!\n");
     return 0;
 }</code></pre>
+                    </div>
+                    <div id="practice-questions">
+                        <h3>Practice Questions</h3>
+                        <div id="questions-container"></div>
+                    </div>
                 </div>
             </div>
+        </main>
 
-            <div class="practice-section">
-                <h2>Practice Area</h2>
-                <div class="editor-container">
-                    <textarea id="code-editor" placeholder="Write your C code here...">#include <stdio.h>
+        <aside class="practice-sidebar">
+            <div class="practice-sidebar-scrollable">
+                <div class="practice-section">
+                    <h2>Practice Area</h2>
+                    <div class="editor-container">
+                        <textarea id="code-editor" placeholder="Write your C code here...">#include <stdio.h>
 
 int main() {
     // Your code here
     printf("Hello, World!\n");
     return 0;
 }</textarea>
-                    <div class="editor-controls">
-                        <button id="run-code">Run Code</button>
-                        <button id="clear-code">Clear</button>
-                        <button id="load-example">Load Example</button>
+                        <div class="editor-controls">
+                            <button id="run-code">Run Code</button>
+                            <button id="clear-code">Clear</button>
+                            <button id="load-example">Load Example</button>
+                        </div>
+                    </div>
+                    <div class="output-container">
+                        <h3>Output</h3>
+                        <pre id="output-area">// Output will appear here</pre>
                     </div>
                 </div>
-                <div class="output-container">
-                    <h3>Output</h3>
-                    <pre id="output-area">// Output will appear here</pre>
-                </div>
             </div>
-        </main>
+        </aside>
     </div>
 
-    <footer>
+    <!-- <footer>
         <p>&copy; 2026 C Language Learning Platform. Happy Coding!</p>
-    </footer>
+    </footer> -->
 
     <script src="script.js"></script>
 </body>
